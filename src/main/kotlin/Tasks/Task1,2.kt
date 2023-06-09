@@ -20,8 +20,8 @@ fun main(args: Array<String>) {
 //        doWhile(array)
 //        f(baz="ds")
 
-    val myLamda:(Int,Int)->String={b:Int,a:Int-> greater(a,b) }
-    var res:String=""
+    val myLamda={b:Int,a:Int-> greater(a,b) }
+    var res=""
 
 
     add(1,2,myLamda)
@@ -32,6 +32,19 @@ fun main(args: Array<String>) {
 
     sub1(7,2){x,y-> greater(x,y) }
 
+    var s = "SDF"
+    var c = with(S()){
+        this.j = "sadas"
+        this.j
+    }
+
+    println(c)
+    s = "as$s"
+
+
+}
+class S{
+    var j = "asd"
 }
 fun sub1(a: Int, b: Int, action: (Int, Int) -> String ) {
     println( action(a,b))

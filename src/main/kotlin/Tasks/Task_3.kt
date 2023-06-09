@@ -5,17 +5,22 @@ fun main(){
     nullCheck()
 
 
-
 }
 fun nullCheck(){
-    var s:String?="Dwetdfte"
-    var d:String?=null
+    var d:String?="dfgh"
+    var s:String?=null
     if (s != null) {
         println(s.length)
     }
-    println(d?.length)
-    println(d!!.length)//throws exception
+    var vv:Int=0
+    var c = d?.let {
+        vv=d.length ?: 2
+        println(s?.length ?: 3)
+        10000
 
+    }?:5
+    println(vv)
+    println(c)
 
 
 
