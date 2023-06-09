@@ -76,12 +76,50 @@ open class ConstructorsDemo1{
 
 
 }
-fun main(){
-    var sddf=ConstructorsDemo1("fgwy",1)
-
-}
+//fun main(){
+//    var sddf=ConstructorsDemo1("fgwy",1)
+//
+//}
 class SubClass:ConstructorsDemo1{
     constructor(name: String, id: Int, pass: String) : super(name,id,pass) {
         println()
     }
+}
+
+
+
+
+
+open class Employee(name: String, age: Int, salary: Float) {
+    init {
+        println("Name is $name.")
+        println("Age is $age")
+        println("Salary is $salary")
+    }
+}
+open class Programmer(name: String, age: Int, salary: Float):Employee(name,age,salary){
+    fun doProgram() {
+        println("programming is my passion.")
+    }
+}
+class Salesman(name: String, age: Int, salary: Float):Employee(name,age,salary){
+    fun fieldWork() {
+        println("travelling is my hobby.")
+    }
+}
+fun main(args: Array<String>){
+//    var sddf=ConstructorsDemo1("fgwy",1)
+
+    //    var ob=ConstructorsDemo("main",1)
+//    println( ob.nameClass)
+//
+//    var ob1=sub()
+//    println(ob1.s)
+
+
+    val obj1 = Programmer("Ashu", 25, 40000f)
+    obj1.doProgram()
+    val obj2 = Salesman("Ajay", 24, 30000f)
+    obj2.fieldWork()
+
 }
