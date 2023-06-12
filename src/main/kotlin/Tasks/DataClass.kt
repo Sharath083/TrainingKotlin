@@ -16,7 +16,7 @@ fun main(){
 
     println(ob1.hashCode())
     println(ob2.hashCode())
-    println(ob1.equals(ob2))
+    println(ob1 == ob2)
 }
 
 

@@ -1,10 +1,10 @@
 package Tasks.Collections
 
 fun arrayDemo(){
-    var arr = Array<Int>(3){0} //initialize the array
+    val arr = Array<Int>(3){0} //initialize the array
     println("Default array")
     arr.printArray()
-    var arrInt=arrayOf<Int>(1,2,3,4,5)
+    val arrInt=arrayOf<Int>(1,2,3,4,5)
     println("Integer array")
     arrInt.printArray()
     println("String array")

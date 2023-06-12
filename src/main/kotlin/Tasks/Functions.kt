@@ -36,9 +36,9 @@ fun main(){
 
     val s1 = "hey "
     val s2 = "Hello "
-    var s3 = "There "
+    val s3 = "There "
     println(s1.con(s2,s3))
-    var a1 = 1
+    val a1 = 1
     a1.sum(2)
     a1.greater(2)
         5 greater 3  //use of infix function
