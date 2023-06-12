@@ -20,51 +20,10 @@ fun main(args: Array<String>) {
 //        doWhile(array)
 //        f(baz="ds")
 
-    val myLamda={b:Int,a:Int-> greater(a,b) }
-    var res=""
-
-
-    add(1,2,myLamda)
-    sub(5,2,{x,y-> res=greater(x,y) })
-    println(res)
-
-    rev(res) { it.reversed() } // "it" is used when there is only ine variable in lamda fun
-
-    sub1(7,2){x,y-> greater(x,y) }
-
-    var s = "SDF"
-    var c = with(S()){
-        this.j = "sadas"
-        this.j
-    }
-
-    println(c)
-    s = "as$s"
-
-
-}
-class S{
-    var j = "asd"
-}
-fun sub1(a: Int, b: Int, action: (Int, Int) -> String ) {
-    println( action(a,b))
-
-}
-fun sub(a: Int, b: Int, action: (Int, Int) -> Unit ) {
-    action(a,b)
 
 }
 
-fun rev(s:String,ac:(String)->String){
-    println(ac(s))
-}
-fun greater(a:Int,b:Int):String{
-    if (a>b){
-        return "$a is greater"
-    }else{
-        return "$b is greater"
-    }
-}
+
 fun variables() {
     var mutable = 1
     val immutabal = 1
@@ -200,9 +159,3 @@ fun f(
 }
 
 
-
-fun add(a: Int, b: Int, action: (Int, Int) -> String) {
-    var s = a + b;
-    println( action(b,a))
-
-}

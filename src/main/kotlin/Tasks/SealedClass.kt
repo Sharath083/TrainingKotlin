@@ -4,7 +4,10 @@ sealed class Shape{
     class Circle(var radius: Float): Shape()
     class Square(var length: Int): Shape()
     class Rectangle(var length: Int, var breadth: Int): Shape()
-    //  object NotAShape : Shape()
+//    data class
+//      object NotAShape : Shape()
+//    sealed class{}
+//    sealed interface// we can have both sealed class and interface inside sealed class
 }
 
 fun eval(e: Shape) =
