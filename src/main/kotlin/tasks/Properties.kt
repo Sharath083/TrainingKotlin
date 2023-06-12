@@ -1,4 +1,4 @@
-package Tasks
+package tasks
 
     fun  main(args: Array<String>) {
 

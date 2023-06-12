@@ -1,4 +1,4 @@
-package Tasks
+package tasks
 
 class Nested {
     private var num:Int=1
@@ -20,9 +20,9 @@ class Nested {
 
 }
 fun main(){
-    var ob=Nested()
+    var ob= Nested()
     var ob1= Nested.Inner()
-    var ob2=Nested.Inner.Inner2()
+    var ob2= Nested.Inner.Inner2()
     ob.outer()
     ob1.innerFun()
     ob2.inner2()

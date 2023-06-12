@@ -1,4 +1,4 @@
-package Tasks.Collections
+package tasks.Collections
 
 fun immutableList(){//cannot add or change elemnets in immutable list
 
@@ -37,9 +37,9 @@ fun <D>List<D>.printList(){
     }
 
 }
-
-fun main(){
-    val arrayList:ArrayList<String> = arrayListOf("2df","gew")
-    println(arrayList)
-//    mutableList()
-}
+//
+//fun main(){
+//    val arrayList:ArrayList<String> = arrayListOf("2df","gew")
+//    println(arrayList)
+////    mutableList()
+//}

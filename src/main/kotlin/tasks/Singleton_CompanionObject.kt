@@ -1,4 +1,4 @@
-package Tasks
+package tasks
 
 object SingletonDemo { //syntax to create singleton
     var variable="SingletonVariable"
@@ -28,7 +28,7 @@ class Comp{
     }
 }
 fun main(){
-    var ob=Comp()
+    var ob= Comp()
     ob.normal()//we have to create object to access methods outside com Object
     println(Comp.co)//can access using class name like static in java
     Comp.co()

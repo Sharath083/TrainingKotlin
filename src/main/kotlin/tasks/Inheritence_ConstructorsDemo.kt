@@ -1,4 +1,4 @@
-package Tasks
+package tasks
 
  open class ConstructorsDemo (val nameClass:String){
     constructor(name:String,id:Int) : this(name) {
@@ -33,7 +33,7 @@ internal class sub : ConstructorsDemo("sub") {
     val s=nameClass
 }
 class NonSub{ //: sub() {//Cannot inherit sub couse it is not open
-    var sdd=ConstructorsDemo("sd")
+    var sdd= ConstructorsDemo("sd")
     //sdd.j()//cannot call because protected
 }
 
@@ -80,7 +80,7 @@ open class ConstructorsDemo1{
 //    var sddf=ConstructorsDemo1("fgwy",1)
 //
 //}
-class SubClass:ConstructorsDemo1{
+class SubClass: ConstructorsDemo1 {
     constructor(name: String, id: Int, pass: String) : super(name,id,pass) {
         println()
     }
@@ -97,12 +97,12 @@ open class Employee(name: String, age: Int, salary: Float) {
         println("Salary is $salary")
     }
 }
-open class Programmer(name: String, age: Int, salary: Float):Employee(name,age,salary){
+open class Programmer(name: String, age: Int, salary: Float): Employee(name,age,salary){
     fun doProgram() {
         println("programming is my passion.")
     }
 }
-class Salesman(name: String, age: Int, salary: Float):Employee(name,age,salary){
+class Salesman(name: String, age: Int, salary: Float): Employee(name,age,salary){
     fun fieldWork() {
         println("travelling is my hobby.")
     }

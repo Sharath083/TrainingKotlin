@@ -1,4 +1,4 @@
-package Tasks
+package tasks
 
 abstract class Bank {
     abstract fun simpleInterest(p: Int, r: Double, t: Int) :Double

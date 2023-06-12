@@ -1,4 +1,4 @@
-package Tasks.Collections
+package tasks.Collections
 
 fun arrayDemo(){
     val arr = Array<Int>(3){0} //initialize the array
@@ -26,6 +26,6 @@ fun <D>Array<D>.printArray(){
     println()
 }
 
-fun main(){
-    arrayDemo()
-}
+//fun main(){
+//    arrayDemo()
+//}

@@ -1,4 +1,4 @@
-package Tasks
+package tasks
 
 sealed class Shape{
     class Circle(var radius: Float): Shape()
@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 
     var circle = Shape.Circle(5.0f)
     var square = Shape.Square(5)
-    var rectangle = Shape.Rectangle(4,5)
+    var rectangle = Shape.Rectangle(4, 5)
 
     eval(circle)
     eval(square)
