@@ -2,8 +2,8 @@ package tasks.coroutines
 
 import kotlinx.coroutines.*
 
-fun main()= runBlocking {   //main thread
-//    runBlocking {//runs on main thread
+fun main() =  //main thread
+    runBlocking {//runs on main thread
 
         println("Start of Thread : ${Thread.currentThread().name}") //thread started
 
@@ -30,7 +30,7 @@ fun main()= runBlocking {   //main thread
 //    delay(100) will only work inside a coroutine
 //        Thread.sleep(1099)//if we remove this the program will end before the execution of coroutine
         println("End of Thread : ${Thread.currentThread().name}")//thread ended before sub thread.they ran in  parallel without blocking
-//    }
+
 
 }
 
